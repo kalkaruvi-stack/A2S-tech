@@ -22,14 +22,14 @@
    font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;
-  background: #000000;
+  background: #ffffff;
   /* background: #01060c; */
   padding: 0 2.5rem;
   height: 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(99, 179, 237, 0.12);
+  border-bottom: 1px solid rgba(92, 182, 247, 0.12);
 }
 
 /* ---- Logo ---- */
@@ -42,8 +42,8 @@
 }
 
 .logo-icon {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   background: linear-gradient(135deg, #3b82f6, #06b6d4);
   border-radius: 10px;
   display: flex;
@@ -67,8 +67,8 @@
 }
 
 .logo-icon svg {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   position: relative;
   z-index: 1;
 }
@@ -80,9 +80,9 @@
 }
 
 .logo-primary {
-  font-size: 18px;
-  font-weight: 700;
-  color: #ffffff;
+  font-size: 24px;
+  font-weight: 800;
+  color: #8a8a8a;
   letter-spacing: 0.04em;
 }
 
@@ -91,10 +91,10 @@
 }
 
 .logo-sub {
-  font-size: 9px;
-  font-weight: 500;
-  color: #64748b;
-  letter-spacing: 0.18em;
+  font-size: 12px;
+  font-weight: 700;
+  color: #868686;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-top: 1px;
 }
@@ -122,18 +122,20 @@
 
 .nav-links li a:hover {
   color: #ffffff;
-  background: rgba(56, 189, 248, 0.08);
+  background: rgba(61, 193, 250, 0.86);
 }
 
 .nav-links li a.active {
-  color: #38bdf8;
-  background: rgba(56, 189, 248, 0.1);
+  color: #ffffff;
+  font-weight: bold;
+  background: rgba(0, 143, 205, 0.868);
 }
 
 /* ---- CTA Button ---- */
 .nav-cta {
-  background: linear-gradient(135deg, #3b82f6, #06b6d4) !important;
-  color: #ffffff !important;
+  /* background: linear-gradient(135deg, #3b82f6, #06b6d4) !important; */
+  border: 1px solid #06b6d4;
+  color: #06b6d4!important;
   font-weight: 600 !important;
   padding: 8px 20px !important;
   border-radius: 8px !important;
@@ -141,7 +143,9 @@
 }
 
 .nav-cta:hover {
-  opacity: 0.9 !important;
+  /* opacity: 0.9 !important; */
+  color: #ffffff;
+
   transform: translateY(-1px) !important;
   background: linear-gradient(135deg, #3b82f6, #06b6d4) !important;
 }
