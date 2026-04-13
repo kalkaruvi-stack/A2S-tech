@@ -20,9 +20,9 @@ const Herosection = () => {
   return (
     <section className="hero-section">
       {/* Background */}
-      <div className="bg-grid"></div>
+      {/* <div className="bg-grid"></div>
       <div className="orb orb-1"></div>
-      <div className="orb orb-2"></div>
+      <div className="orb orb-2"></div> */}
 
       <div className="hero-inner" ref={ref}>
         {/* LEFT */}
