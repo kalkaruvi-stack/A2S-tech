@@ -1,0 +1,134 @@
+.contact-section {
+  background: #e9eff3;
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* CENTER EVERYTHING */
+}
+
+/* Heading */
+.contact-heading {
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.contact-subheading {
+  font-size: 1.2rem;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.contact-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+  max-width: 500px;
+}
+
+/* Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;              /* FULL WIDTH */
+  max-width: 500px;         /* LIMIT WIDTH */
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0px 0px 6px rgba(52,152,219,0.3);
+}
+
+.form-textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/* Button */
+.form-button {
+  width: 100%; /* FULL WIDTH BUTTON */
+  background: #3498db;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-button:hover {
+  background: #217dbb;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+  flex-wrap: wrap;
+}
+
+.icon {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #3498db;
+  border: 1px solid #3498db;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  background: #3498db;
+  color: white;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 25px 15px;
+  }
+
+  .contact-heading {
+    font-size: 1.5rem;
+  }
+
+  .contact-subheading {
+    font-size: 1.1rem;
+  }
+
+  .contact-text {
+    font-size: 13px;
+  }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 601px) and (max-width: 900px) {
+  .contact-section {
+    padding: 30px 20px;
+  }
+}
