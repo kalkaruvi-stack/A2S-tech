@@ -9,7 +9,7 @@
   font-family: "Poppins", sans-serif;
   padding: 30px 40px;
   overflow: hidden;
-  filter: brightness(0.6);
+ 
 }
 
 /* Dark Overlay (ONLY background dark, text stays bright) */
