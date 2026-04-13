@@ -1,45 +1,53 @@
+/* ================= ABOUT US SECTION ================= */
 .aboutus-section {
+  width: 100%;
   padding: 60px 20px;
-  /* background: linear-gradient(135deg, #0f172a, #1e293b); */
   background-color: #dee1e6;
   color: #fff;
+  box-sizing: border-box;
 }
 
+/* ================= CONTAINER ================= */
 .aboutus-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
   display: flex;
   flex-wrap: wrap;
-  /* max-width: 1200px; */
-  margin: 0 auto;
   align-items: center;
+  justify-content: space-between;
   gap: 40px;
+
+  box-sizing: border-box;
 }
 
+/* ================= IMAGE SECTION ================= */
 .aboutus-image {
   flex: 1;
-  min-width: 200px;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutus-image img {
-  /* width: 100%; */
-  height: 300px;
   width: 350px;
+  max-width: 100%;
+  height: 300px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
 }
 
+/* ================= CONTENT SECTION ================= */
 .aboutus-content {
   flex: 1;
-  min-width: 200px;
-  margin-right: 20px;
-  
+  min-width: 300px;
+  margin-right: 0;
 }
 
-/* .aboutus-content h2 {
-  font-size: 30px;
-  margin-bottom: 40px;
-  color: #38bdf8;
-} */
- /* Heading Style */
+/* ================= HEADING ================= */
 .aboutus-content h2 {
   font-size: 32px;
   font-weight: 700;
@@ -49,13 +57,12 @@
   position: relative;
   letter-spacing: 1px;
 
-  /* Animation */
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 1s ease forwards;
 }
 
-/* Fade Up Animation */
+/* Fade animation */
 @keyframes fadeUp {
   to {
     opacity: 1;
@@ -63,7 +70,7 @@
   }
 }
 
-/* Gradient Underline Animation */
+/* Underline animation */
 .aboutus-content h2::after {
   content: "";
   width: 0;
@@ -83,36 +90,28 @@
   }
 }
 
-
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-/* Hover Effect */
+/* Hover */
 .aboutus-content h2:hover {
   color: #06b6d4;
   transform: scale(1.05);
   transition: 0.3s ease;
 }
 
+/* ================= PARAGRAPH ================= */
 .aboutus-content p {
-  /* font-size: 1rem; */
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 19px;
-  color: #000000;
-    text-align: justify;
-    font-family: sans-serif;
-    font-weight: 100;
+  color: #000;
+  text-align: justify;
+  font-family: sans-serif;
+  font-weight: 300;
 }
 
+/* ================= BUTTON ================= */
 .aboutus-btn {
   padding: 12px 30px;
-  /* font-size: 1rem; */
-   font-size: 14px;
+  font-size: 14px;
   background-color: #38bdf8;
   color: #0f172a;
 
@@ -127,18 +126,9 @@
   transform: translateY(-2px);
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .aboutus-container {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
+/* ================= RESPONSIVE ================= */
 
-  .aboutus-content h2 {
-    font-size: 2rem;
-  }
-}
-/* ================= TABLET (max 900px) ================= */
+/* Tablet */
 @media (max-width: 900px) {
   .aboutus-container {
     flex-direction: column-reverse;
@@ -151,17 +141,12 @@
     height: auto;
   }
 
-  .aboutus-content {
-    margin-right: 0;
-  }
-
   .aboutus-content p {
     text-align: center;
   }
 }
 
-
-/* ================= MOBILE (max 600px) ================= */
+/* Mobile */
 @media (max-width: 600px) {
   .aboutus-section {
     padding: 40px 15px;
@@ -178,7 +163,6 @@
 
   .aboutus-content p {
     font-size: 13px;
-    line-height: 1.6;
   }
 
   .aboutus-btn {
@@ -187,8 +171,7 @@
   }
 }
 
-
-/* ================= SMALL MOBILE (max 400px) ================= */
+/* Small Mobile */
 @media (max-width: 400px) {
   .aboutus-content h2 {
     font-size: 20px;
