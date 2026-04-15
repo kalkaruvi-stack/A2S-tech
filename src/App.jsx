@@ -5,6 +5,8 @@ import Herosection from './components/Herosection'
 import About from './components/About'
 import ServicesBanner from './components/ServicesBanner'
 import ContactPage from './components/Contact'
+import Footer from './components/Footer'
+
 
 const App = () => {
   return (
@@ -14,6 +16,7 @@ const App = () => {
       <About />
       <ServicesBanner />
       <ContactPage /> 
+      <Footer />
     </div>
   )
 }

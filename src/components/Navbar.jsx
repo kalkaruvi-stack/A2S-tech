@@ -47,7 +47,7 @@ const Navbar = () => {
             <span className="logo-primary">
               AS2 <span>TECH</span>
             </span>
-            <span className="logo-sub">Solutions & Innovation</span>
+            {/* <span className="logo-sub">Solutions & Innovation</span> */}
           </div>
         </a>
 
